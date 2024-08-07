@@ -19,9 +19,9 @@ public class Empleados {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
  
-    int id;
+    Integer id;
     String nombreCompleto;
-    int dpi;
+    Integer dpi;
     String puesto;
     double salario;
 }
