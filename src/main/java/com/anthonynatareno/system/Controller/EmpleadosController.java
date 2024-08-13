@@ -30,7 +30,7 @@ public class EmpleadosController {
     @Autowired
     private IEmpleadosService iEmpleadosService;
  
-        //http://localhost:8081:/rh-empleado/empleados
+        //http://localhost:8087/rh-empleado/empleadosA
         @GetMapping("/empleados")
  
         public List<Empleados> obtenerEmpleado(){
