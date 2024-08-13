@@ -1,11 +1,14 @@
 package com.anthonynatareno.system.Controller;
 
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
+import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
@@ -55,5 +58,18 @@ public class EmpleadosController {
                 iEmpleadosService.guardarEmpleados(empleados);
                 return ResponseEntity.ok(empleados);
         }
+
+         @DeleteMapping("/empleados/{id}")
+        public ResponseEntity<Map<String, Boolean>> eliminarEmpleados(@PathVariable Integer id){
+            Empleados empleados = iEmpleadosService.buscarEmpleados(id);
+            if(empleados == null)
+                throw new EmpleadosException("El empleado no existe");
+
+                // JSON {eliminado: true}
+
+                Map<String, Boolean> respuesta = new HashMap<>();
+                respuesta.put("eliminado", true);
+                return ResponseEntity.ok(respuesta);
+        } 
 }
  
