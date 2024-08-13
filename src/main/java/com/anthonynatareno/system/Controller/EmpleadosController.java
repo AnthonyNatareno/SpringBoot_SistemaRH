@@ -1,6 +1,7 @@
 package com.anthonynatareno.system.Controller;
 
 import java.util.List;
+
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -9,9 +10,9 @@ import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
- 
-import com.anthonynatareno.system.service.IEmpleadosService;
+
 import com.anthonynatareno.system.model.Empleados;
+import com.anthonynatareno.system.service.IEmpleadosService;
  
 @RestController //http://localhost:8081:/rh-empleado
 @RequestMapping("rh-empleado")
@@ -37,5 +38,7 @@ public class EmpleadosController {
             logger.info("Empleado agregado");
             return iEmpleadosService.guardarEmpleados(empleados);
         }
+
+        
 }
  
