@@ -24,7 +24,7 @@ public class EmpleadosController {
         @GetMapping("/empleados")
  
         public List<Empleados> obtenerEmpleado(){
-            var empleado2 = iEmpleadosService.listarEmpleados
+            var empleado2 = iEmpleadosService.listarEmpleados();
             empleado2.forEach((empleado -> logger.info(empleado.toString())));
             return empleado2;
  
