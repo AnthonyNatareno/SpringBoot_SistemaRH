@@ -10,4 +10,5 @@ public class EmpleadosException extends RuntimeException{
         super(mensaje);
     }
  
+
 }
