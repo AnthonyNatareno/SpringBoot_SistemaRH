@@ -10,25 +10,25 @@ import com.anthonynatareno.system.model.Empresa;
 public class EmpresaService implements IEmpresaService  {
 
     @Override
-    public List<Empresa> listarEmpleados() {
+    public List<Empresa> listarEmpresa() {
         // TODO Auto-generated method stub
-        throw new UnsupportedOperationException("Unimplemented method 'listarEmpleados'");
+        throw new UnsupportedOperationException("Unimplemented method 'listarEmpresa'");
     }
 
     @Override
-    public Empresa buscarEmpresa(Integer idEmpleado) {
+    public Empresa buscarEmpresa(Integer idEmpresa) {
         // TODO Auto-generated method stub
         throw new UnsupportedOperationException("Unimplemented method 'buscarEmpresa'");
     }
 
     @Override
-    public Empresa guardarEmpleados(Empresa empleados) {
+    public Empresa guardarEmpresa(Empresa empresa) {
         // TODO Auto-generated method stub
-        throw new UnsupportedOperationException("Unimplemented method 'guardarEmpleados'");
+        throw new UnsupportedOperationException("Unimplemented method 'guardarEmpresa'");
     }
 
     @Override
-    public void eliminarEmpresa(Empresa empleados) {
+    public void eliminarEmpresa(Empresa empresa) {
         // TODO Auto-generated method stub
         throw new UnsupportedOperationException("Unimplemented method 'eliminarEmpresa'");
     }

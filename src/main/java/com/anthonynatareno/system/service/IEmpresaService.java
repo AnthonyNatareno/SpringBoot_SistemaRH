@@ -4,11 +4,11 @@ import java.util.List;
 import com.anthonynatareno.system.model.Empresa;
 
 public interface IEmpresaService {
-    public List<Empresa> listarEmpleados();
+    public List<Empresa> listarEmpresa();
  
-    public Empresa buscarEmpresa(Integer idEmpleado);
+    public Empresa buscarEmpresa(Integer idempresa);
  
-    public Empresa guardarEmpleados(Empresa empleados);
+    public Empresa guardarEmpresa(Empresa empresa);
  
-    public void eliminarEmpresa(Empresa empleados);
+    public void eliminarEmpresa(Empresa empresa);
 }
